@@ -2,16 +2,28 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <script type = "text/javascript" src = "js/vue.js"></script>
     <title>Welcome to Joar Nykvist's webpage!</title>
   </head>
-  <body background="img/one_red_chili.jpg">
+  <body background="img/many_green_chilis.jpg">
     <div>
-      <div>
+      <div id = "intro" style = "text-align:center;">
+         <h1>{{ message }}</h1>
+      </div>
+      <script type = "text/javascript">
+         var vue_det = new Vue({
+            el: '#intro',
+            data: {
+               message: 'My first VueJS Task'
+            }
+         });
+      </script>
+      <div col="6">
         <h1>
             Please ask Agent0 some stuff!
         </h1>
       </div>
-      <div>
+      <div col="6">
         <iframe
       allow="microphone;"
       width="350"
