@@ -68,29 +68,30 @@ h1 {
 	animation-iteration-count: infinite;
 }
 .bird--one {
-    animation-duration: 15s;
+    animation-duration: 17s;
     animation-delay: 0s;
     animation-name: fly-right-one;
   }
 .bird--two {
-    animation-duration: 16s;
+    animation-duration: 18s;
     animation-delay: 1s;
     animation-name: fly-right-two;    
 }
 .bird--three {
-    animation-duration: 14.6s;
-    animation-delay: 9.5s;
+    animation-duration: 16.6s;
+    animation-delay: 13.5s;
     animation-name: fly-right-one;
 }
 .bird--four {
-    animation-duration: 16s;
-    animation-delay: 10.25s;
+    animation-duration: 18s;
+    animation-delay: 13.25s;
     animation-name: fly-right-two;    
 }
 .bird-container {
 	position: absolute;
 	top: -40%;
-	left: -50%;
+    left: -50%;
+    right:-40%;
 	/* transform: scale(0) translateX(-10vw); */
     will-change: transform;
     /* animation-name: fly-right-one; */
