@@ -2,38 +2,34 @@
 <html style="height:100%;">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script type = "text/javascript" src = "js/vue.js"></script>
     <title>Agent 0 </title>
   </head>
   <body background="img/many_green_chilis.jpg" style="height:100%; background-position:center; background-repeat: no-repeat; background-size:cover">
-    <div>
-        <div>
-            <a href="index.html" style="color:white"> Back</a>
-        </div>
-      <div id = "intro" style = "text-align:center;">
-         <h1 style="color:white"> Welcome! </h1>
-      </div>
-      <script type = "text/javascript">
-         var vue_det = new Vue({
-            el: '#intro',
-            data: {
-               message: 'My first VueJS Task'
-            }
-         });
-      </script>
-      <div col="6">
-        <h1 style="color:white">
-            Please ask Agent0 some stuff about chili!
-        </h1>
-      </div>
-      <div col="6">
-        <iframe
-      allow="microphone;"
-      width="350"
-      height="430"
-      src="https://console.dialogflow.com/api-client/demo/embedded/c480f8ac-06eb-4aeb-9794-be0219f64243">
+    <a href="index.html" style="color:white"> Back</a>
+    <div class="transpbox transpbox-bigger">
+        
+      
+      <h2 style="color:black"> Welcome! </h2>
+    
+    
+    
+      <h2 style="color:black">
+          Please ask Agent0 some stuff about chili!
+      </h2>
+      <div>
+          <iframe
+          allow="microphone;"
+          border-radius: 30px; 
+          width="700"
+          height="500"
+          src="https://console.dialogflow.com/api-client/demo/embedded/c480f8ac-06eb-4aeb-9794-be0219f64243">
         </iframe>
       </div>
+    
+      
+      
   </div>
       
   </body>

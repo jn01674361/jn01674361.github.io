@@ -6,8 +6,6 @@ a {
 .transpbox{
     text-align: left; 
     background: rgba(255, 255, 255, 0.55); 
-    width: 600px; 
-    height: 450px; 
     border-radius: 30px; 
     text-align: center; 
     color: black; 
@@ -17,7 +15,16 @@ a {
     padding-top: 20px; 
     padding-right: 30px; 
     padding-bottom: 20px; 
-    padding-left: 30px;
+	padding-left: 30px;
+	/* display: initial; */
+}
+.transpbox-bigger{
+	width: 1000px; 
+    height: 700px; 
+}
+.transpbox-medium{
+	width: 600px; 
+    height: 450px; 
 }
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
 
