@@ -4,33 +4,66 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type = "text/javascript" src = "js/vue.js"></script>
-    <title>Agent 0 </title>
+    <title>Leonardo </title>
   </head>
   <body background="img/many_green_chilis.jpg" style="height:100%; background-position:center; background-repeat: no-repeat; background-size:cover">
-    <a href="index.html" style="color:white"> Back</a>
-    <div class="transpbox transpbox-bigger">
+    
+    <button class="collapsible">About Leonardo</button>
+
+    <div class="content">
+        <p>Leonardo is an implementation of <a href="https://dialogflow.com/"> Dialogflow </a>. More information will be posted soon.</p>
+    </div>
+    <div>
+      <br/>
+      <div class="transpbox transpbox-bigger">
+        <a href="index.html" style="text-align: left; color:black"> Back</a>
+          
         
+        <h2 style="color:black"> Welcome! </h2>
       
-      <h2 style="color:black"> Welcome! </h2>
+      
+      
+        <h2 style="color:black text">
+            Please ask Leonardo some stuff about chili!
+        </h2>
+        <div>
+            <iframe
+            allow="microphone;"
+            border-radius: 30px; 
+            width="700"
+            height="500"
+            src="https://console.dialogflow.com/api-client/demo/embedded/c480f8ac-06eb-4aeb-9794-be0219f64243">
+          </iframe>
+        </div>
+
+    </div>
+ 
     
+   
     
-    
-      <h2 style="color:black">
-          Please ask Agent0 some stuff about chili!
-      </h2>
-      <div>
-          <iframe
-          allow="microphone;"
-          border-radius: 30px; 
-          width="700"
-          height="500"
-          src="https://console.dialogflow.com/api-client/demo/embedded/c480f8ac-06eb-4aeb-9794-be0219f64243">
-        </iframe>
-      </div>
     
       
       
   </div>
       
   </body>
+
 </html>
+
+<script> 
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+  }
+</script>
+
