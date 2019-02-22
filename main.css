@@ -15,7 +15,7 @@ a {
     padding-top: 20px; 
     padding-right: 30px; 
     padding-bottom: 20px; 
-	padding-left: 30px;
+		padding-left: 30px;
 	/* display: initial; */
 }
 .transpbox-bigger{
@@ -25,6 +25,9 @@ a {
 .transpbox-medium{
 	width: 600px; 
     height: 450px; 
+}
+.transp-span{
+	font-size:30px;cursor:pointer;background: rgba(255, 255, 255, 0.55); border-radius: 10px; padding: 6px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -40,12 +43,66 @@ a {
 	font-size: 15px;
 	border-radius: 30px; 
 
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-	background-color: #ccc;
-  }
+	}
+body {
+	font-family: "Lato", sans-serif;
+}
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav p {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+background-color: #ccc;
+}
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
