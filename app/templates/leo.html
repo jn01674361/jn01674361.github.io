@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+
+    <title>Leonardo </title>
+  </head>
+  <body background="{{url_for('static',filename='img/many_green_chilis.jpg')}}" style="height:100%; background-position:center; background-repeat: no-repeat; background-size:cover">
+    
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{{ url_for('index') }}">Start</a>
+        <a href="{{ url_for('cv') }}">CV</a>
+        <a href="https://github.com/jn01674361">Github</a>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <a> <u>Projects</u> </a>
+        <a href="{{ url_for('leo') }}">Chili Chatbot</a>
+    </div>
+    <span class="transp-span" onclick="openNav()">&#9776; menu</span>
+    <div>
+      
+      <br/>
+      <div class="transpbox transpbox-bigger">    
+      
+        
+        <h2 style="color:black"> Welcome! </h2>
+      
+      
+      
+        <h2 style="color:black text">
+            Please ask Leonardo some stuff about chili!
+        </h2>
+        <div>
+            <form action="{{ url_for('leo') }}" method="post">
+                <textarea name="text">
+                    
+                </textarea>
+                <input type="submit" value="Ask Leo">
+            </form>
+            <textarea style="width:400px; height:200px">
+                {% if text %}
+                    Leo: {{ text }}
+                {% endif %}
+            </textarea>
+            
+        </div>
+
+    </div>
+ 
+    
+   
+    
+    
+      
+      
+  </div>
+      
+  </body>
+
+</html>
+
+<!-- <script> 
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+  }
+</script> -->
+
